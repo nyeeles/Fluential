@@ -7,7 +7,7 @@
 </head>
 
 <body>
-
+<div class="container">
 <!-- HEADER -->
 	<header id="top">
 		<img class="logo" src="/fluential_logo_transparent.png">
@@ -18,48 +18,85 @@
 	</header>
 
 <!-- SEARCH BAR -->
-	<section class="search" style="color:#E8E8E8;font-size:xx-large;">Begin typing to search</section>
+	<section class="search" 
+		<form action="/" method="post">
+			<input class="searchbox" type="text" value="Begin typing to search..." onclick="if(this.value=='Begin typing to search...'){this.value=''}" onblur="if(this.value==''){this.value='Begin typing to search...'}">
+			<input type="image" src="/magnifying_glass.jpg">
+		</form>
+	</section>
 
 <!-- SEARCH RESULTS -->
-	<div class="container">
-	<article>
-		<aside>
-			<img src="/zoella.jpg">
-		</aside>
-		<header>2,060,532 views</header>
-		<p>Lifestyle and fashion beauty vlogger. Fashion and dating advice.</p>
-	</article>	
+	<div class="search-results">
+		<article>
+			<aside>
+				<img src="/zoella.jpg">
+			</aside>
+			<header>2,060,532 views</header>
+			<p>Lifestyle and fashion beauty vlogger. Fashion and dating advice.</p>
+		</article>	
 
-	<article>
-		<aside>
-			<img src="/devin.jpg">
-		</aside>
-		<header>1,063,332 views</header>
-		<p>Talented filmmaker with a focus on extreme sports.</p>
-	</article>
+		<article>
+			<aside>
+				<img src="/devin.jpg">
+			</aside>
+			<header>1,063,332 views</header>
+			<p>Talented filmmaker with a focus on extreme sports.</p>
+		</article>
 
-	<article>
-		<aside>
-			<img src="/lindsey.jpg">
-		</aside>
-		<header>8,124,534 views</header>
-		<p>American violinist, dancer, performance artist and composer.</p>
-	</article>
+		<article>
+			<aside>
+				<img src="/lindsey.jpg">
+			</aside>
+			<header>8,124,534 views</header>
+			<p>American violinist, dancer, performance artist and composer.</p>
+		</article>
 
-	<article>
-		<aside>
-			<img src="/bart.jpg">
-		</aside>
-		<header>3,024,533 views</header>
-		<p>Crazy parodies, pranks and music spoofs.</p>
-	</article>
-	</div>
+		<article>
+			<aside>
+				<img src="/bart.jpg">
+			</aside>
+			<header>3,024,533 views</header>
+			<p>Crazy parodies, pranks and music spoofs.</p>
+		</article>
+
+		<article>
+			<aside>
+				<img src="/slowmo.jpg">
+			</aside>
+			<header>5,532,514 views</header>
+			<p>Beautiful cinematography shot at super high frame rates.</p>
+		</article>	
+
+		<article>
+			<aside>
+				<img src="/sorted.jpg">
+			</aside>
+			<header>863,125 views</header>
+			<p>A group of friends who make delicious recipes easy for anyone to make.</p>
+		</article>
+
+		<article>
+			<aside>
+				<img src="/harley.jpg">
+			</aside>
+			<header>4,122,124 views</header>
+			<p>Crazy, epic, calorific meals that will blow your mind.</p>
+		</article>
+
+		<article>
+			<aside>
+				<img src="/pentatonix.jpg">
+			</aside>
+			<header>7,014,235 views</header>
+			<p>The most amazing musical mashups you'll ever hear.</p>
+		</article>
+		</div>
 
 <!-- footer -->
-	<footer>
-		<p style="text-align:right;padding-right:30px;"><a href="#top">Top &uarr;</a></p>
-		<p style="text-align:center;color:grey;">&copy; 2014 <a class="copyright-link" href="http://nicyeeles.com">Nic Yeeles</a></p>
-	</footer>
-
+		<!-- <footer>
+			<p style="text-align:right;padding-right:30px;"><a href="#top">Top &uarr;</a></p>
+			<p style="text-align:center;color:grey;">&copy; 2014 <a class="copyright-link" href="http://nicyeeles.com">Nic Yeeles</a></p>
+		</footer> -->
+	</div>
 </body>
 </html>

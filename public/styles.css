@@ -5,7 +5,7 @@ header {
 }
 
 .logo {
-	position: fixed;
+	position: absolute;
 	left: 50%;
 	margin-left: -115px;
 	padding: 25px;
@@ -37,13 +37,21 @@ nav {
 .search {
 	background-color: white;
 	padding: 80px 40px 80px 40px;
-	cursor: text;
 }
 
+.searchbox {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	height: 100px;
+	width: 1200px;
+	font-size: 70px;
+	color: lightgrey;
+}
 
 /* - - - SEARCH RESULTS - - - */
 
-.container {
+.search-results {
 	margin-left: 30px;
 	margin-right: auto;
 
@@ -80,8 +88,8 @@ article header {
 /* - - - FOOTER - - - */
 
 footer {
-	background-color: #EAEAEA;
-	height: 100px;
+	background-color: #666666;
+	height: 60px;
 	width:100%;
 	position: absolute;
 	bottom:0;
@@ -96,9 +104,15 @@ footer {
 /* - - - MISC - - - */
 
 body {
-	background-color: #FAFAFA;
+	background-color: #EBEBEB;
 	font-family: arial;
 	color: #919191;
+	height: 100%;
+}
+
+.container {
+	min-height: 100%;
+	position: relative;
 }
 
 a {
