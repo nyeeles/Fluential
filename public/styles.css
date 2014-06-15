@@ -1,6 +1,111 @@
-p {
-	color: red;
-	margin-left: 20px;
-	font-family: arial;
+/* - - - HEADER - - - */
+
+header {
+	height: 130px;
 }
 
+.logo {
+	position: fixed;
+	left: 50%;
+	margin-left: -115px;
+	padding: 25px;
+}
+
+nav {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: small;
+	letter-spacing: 0.07em;
+	text-align: center;
+	padding: 65px;
+}
+
+.brand-nav, .influencer-nav {
+	color: #454545;
+	border-bottom: solid salmon;
+	padding-bottom: 5px;
+}
+
+.influencer-nav {
+	margin-left: 700px;
+	border-bottom: solid turquoise;
+}
+
+
+/* - - - SEARCH BAR - - - */
+
+.search {
+	background-color: white;
+	padding: 80px 40px 80px 40px;
+	cursor: text;
+}
+
+
+/* - - - SEARCH RESULTS - - - */
+
+.container {
+	margin-left: 30px;
+	margin-right: auto;
+
+}
+
+article {
+	background-color: white;
+	width: 320px;
+	height: 250px;
+	margin: 20px 10px 10px 10px;
+	border-top: solid turquoise;
+	border-bottom: 2px solid turquoise;
+	overflow: hidden;
+	float: left;
+}
+
+article aside img {
+	width: 100%;
+	height: auto;
+}
+
+article aside {
+	height: 150px;
+	overflow: hidden;
+}
+
+article header {
+	height: 0px;
+	font-weight: bold;
+	color: #454545;
+	padding: 15px 10px 0px 10px;
+}
+
+/* - - - FOOTER - - - */
+
+footer {
+	background-color: #EAEAEA;
+	height: 100px;
+	width:100%;
+	position: absolute;
+	bottom:0;
+	font-size: small;
+}
+
+.copyright-link {
+	color: grey;
+}
+
+
+/* - - - MISC - - - */
+
+body {
+	background-color: #FAFAFA;
+	font-family: arial;
+	color: #919191;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	padding: 10px;
+	line-height: 1.5em;
+}
