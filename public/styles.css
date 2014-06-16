@@ -73,6 +73,11 @@ article aside img {
 	height: auto;
 }
 
+.search-results :hover {
+	opacity: 0.7;
+	background: black;
+}
+
 article aside {
 	height: 150px;
 	overflow: hidden;
@@ -118,6 +123,11 @@ body {
 
 a {
 	text-decoration: none;
+	color: #919191;
+}
+
+a:visited{
+	color: #919191;
 }
 
 p {
