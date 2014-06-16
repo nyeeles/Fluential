@@ -19,12 +19,14 @@
 	</header>
 
 <!-- SEARCH BAR -->
-	<section class="search" 
+	<section class="search">
 		<form action="/" method="post">
-			<input class="searchbox" type="text" value="Begin typing to search..." onclick="if(this.value=='Begin typing to search...'){this.value=''}" onblur="if(this.value==''){this.value='Begin typing to search...'}">
-			<input type="image" src="/magnifying_glass.jpg">
+			<input class="searchbox" name="cat" type="text" value="Begin typing to search..." onclick="if(this.value=='Begin typing to search...'){this.value=''}" onblur="if(this.value==''){this.value='Begin typing to search...'}">
+			<button style="background: url(/magnifying_glass.jpg) no-repeat; width:100px; height:100px
+"></button>
 		</form>
 	</section>
+
 
 <!-- SEARCH RESULTS -->
 	<div class="search-results">
