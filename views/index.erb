@@ -22,7 +22,7 @@
 	<section class="search">
 		<form action="/" method="post">
 			<input class="searchbox" name="cat" type="text" value="Begin typing to search..." onclick="if(this.value=='Begin typing to search...'){this.value=''}" onblur="if(this.value==''){this.value='Begin typing to search...'}">
-			<button style="background: url(/magnifying_glass.jpg) no-repeat; width:100px; height:100px
+			<button style="background: url(/magnifying_glass.jpg) no-repeat; width:100px; height:100px; border: none;
 "></button>
 		</form>
 	</section>
@@ -30,85 +30,18 @@
 
 <!-- SEARCH RESULTS -->
 	<div class="search-results">
+		<% @influences.each do |channel|%>
 		<article>
-			<a href="https://www.youtube.com/user/zoella280390" target="_blank">
+			<a href="<%= channel[:url]%>" target="_blank">
 			<aside>
-				<img src="/zoella.jpg">
+				<img src="<%= channel[:img]%>">
 			</aside>
-			<header>2,060,532 views</header>
-			<p>Lifestyle and fashion beauty vlogger. Fashion and dating advice.</p>
+			<header><%= channel[:views]%> views</header>
+			<p><%= channel[:description]%></p>
 			</a>
 		</article>
+		<% end %>
 
-		<article>
-			<a href="https://www.youtube.com/user/devinsupertramp" target="_blank">
-			<aside>
-				<img src="/devin.jpg">
-			</aside>
-			<header>1,063,332 views</header>
-			<p>Talented filmmaker with a focus on extreme sports.</p>
-			</a>
-		</article>
-
-		<article>
-			<a href="https://www.youtube.com/user/lindseystomp" target="_blank">
-			<aside>
-				<img src="/lindsey.jpg">
-			</aside>
-			<header>8,124,534 views</header>
-			<p>American violinist, dancer, performance artist and composer.</p>
-			</a>
-		</article>
-
-		<article>
-			<a href="https://www.youtube.com/user/bartbaker" target="_blank">
-			<aside>
-				<img src="/bart.jpg">
-			</aside>
-			<header>3,024,533 views</header>
-			<p>Crazy parodies, pranks and music spoofs.</p>
-			</a>
-		</article>
-
-		<article>
-			<a href="https://www.youtube.com/user/theslowmoguys" target="_blank">
-			<aside>
-				<img src="/slowmo.jpg">
-			</aside>
-			<header>5,532,514 views</header>
-			<p>Beautiful cinematography shot at super high frame rates.</p>
-			</a>
-		</article>	
-
-		<article>
-			<a href="https://www.youtube.com/user/sortedfood" target="_blank">
-			<aside>
-				<img src="/sorted.jpg">
-			</aside>
-			<header>863,125 views</header>
-			<p>A group of friends who make delicious recipes easy for anyone to make.</p>
-			</a>
-		</article>
-
-		<article>
-			<a href="https://www.youtube.com/user/epicmealtime" target="_blank">
-			<aside>
-				<img src="/harley.jpg">
-			</aside>
-			<header>4,122,124 views</header>
-			<p>Crazy, epic, calorific meals that will blow your mind.</p>
-			</a>
-		</article>
-
-		<article>
-			<a href="https://www.youtube.com/user/ptxofficial" target="_blank">
-			<aside>
-				<img src="/pentatonix.jpg">
-			</aside>
-			<header>7,014,235 views</header>
-			<p>The most amazing musical mashups you'll ever hear.</p>
-			</a>
-		</article>
 		</div>
 
 <!-- footer -->
