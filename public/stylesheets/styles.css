@@ -54,7 +54,6 @@ nav {
 .search-results {
 	margin-left: 30px;
 	margin-right: auto;
-
 }
 
 article {
@@ -96,9 +95,10 @@ footer {
 	background-color: #666666;
 	height: 60px;
 	width:100%;
-	position: absolute;
+	position: fixed;
 	bottom:0;
 	font-size: small;
+	margin-top: 50px;
 }
 
 .copyright-link {
